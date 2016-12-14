@@ -24,7 +24,6 @@ import com.s2k.posintegration.service.ShopifyService;
 public class ShopifyController {
 
 	private static final Logger logger = LoggerFactory.getLogger(ShopifyController.class);
-
 	@Autowired
 	ShopifyService shopifyService;
 
