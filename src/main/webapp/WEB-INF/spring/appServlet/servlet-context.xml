@@ -23,6 +23,11 @@
 	
 	<context:component-scan base-package="com.s2k.posintegration" />
 	
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
+	
+	<context:property-placeholder location="classpath:*.properties"/>
+	
 	
 	
 </beans:beans>

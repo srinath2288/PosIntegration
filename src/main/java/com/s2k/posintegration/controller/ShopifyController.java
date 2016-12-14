@@ -48,7 +48,7 @@ public class ShopifyController {
 	/**
 	 * Get Product by productId.
 	 */
-	@RequestMapping(value = "/product/{productId}", method = RequestMethod.GET)
+	@RequestMapping(value = "/product/{productId}",method = RequestMethod.GET, consumes={"application/json", "application/xml"})
 	public ResponseEntity<Product> getProduct(@PathVariable String productId) {
 		return new ResponseEntity(shopifyService.getProduct(productId), HttpStatus.OK);
 	}
